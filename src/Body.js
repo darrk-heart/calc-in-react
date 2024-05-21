@@ -20,11 +20,21 @@ function Body() {
           backgroundColor: "blue",
         }}
       >
-        <div style={{ backgroundColor: "red" }}>
+        <div
+          style={{
+            backgroundColor: "red",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
           <div>calc</div>
-          <div>
+          <div style={{ display: "flex" }}>
             <span>THEME</span>
-            <div></div>
+            <div style={{ paddingLeft: "10px" }}>
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
           </div>
         </div>
         <div></div>
