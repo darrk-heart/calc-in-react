@@ -5,7 +5,7 @@ function Body() {
   return (
     <div
       style={{
-        backgroundColor: "yellow",
+        backgroundColor: "#3b4664",
         width: "100vw",
         height: "100vh",
       }}
@@ -23,13 +23,22 @@ function Body() {
       >
         <div
           style={{
-            backgroundColor: "red",
+            backgroundColor: "#3b4664",
             display: "flex",
             justifyContent: "space-between",
+            alignItems: "center",
+            color: "white",
           }}
         >
           <div>calc</div>
-          <div style={{ display: "flex" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              width: "28%",
+              justifyContent: "space-between",
+            }}
+          >
             <span>THEME</span>
             <ToggleTheme />
           </div>
