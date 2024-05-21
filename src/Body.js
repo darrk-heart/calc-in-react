@@ -2,7 +2,13 @@ import React from "react";
 
 function Body() {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "yellow",
+        width: "100vw",
+        height: "100vh",
+      }}
+    >
       <div
         style={{
           width: "33%",
