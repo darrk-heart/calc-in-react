@@ -1,4 +1,5 @@
 import React from "react";
+import ToggleTheme from "./ToggleTheme";
 
 function Body() {
   return (
@@ -30,11 +31,7 @@ function Body() {
           <div>calc</div>
           <div style={{ display: "flex" }}>
             <span>THEME</span>
-            <div style={{ paddingLeft: "10px" }}>
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
-            </div>
+            <ToggleTheme />
           </div>
         </div>
         <div></div>

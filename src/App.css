@@ -1,3 +1,59 @@
 .App {
   text-align: center;
 }
+
+.switch-container {
+  position: relative;
+  width: 180px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  width: 180px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider-button {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  top: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.option-0 .slider-button {
+  left: 4px;
+  background-color: #ff6f61;
+}
+
+.option-1 .slider-button {
+  left: 76px; /* (180 - 34) / 2 = 76 */
+  background-color: #2196f3;
+}
+
+.option-2 .slider-button {
+  left: 148px; /* 180 - 34 = 148 */
+  background-color: #4caf50;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.labels span {
+  flex: 1;
+  text-align: center;
+}
+
+.labels .active {
+  font-weight: bold;
+}
