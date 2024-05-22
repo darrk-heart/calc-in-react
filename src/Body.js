@@ -18,19 +18,18 @@ function Body() {
           left: "50%",
           transform: "translate(-50%, -50%)",
           position: "absolute",
-          backgroundColor: "blue",
+          // backgroundColor: "blue",
         }}
       >
         <div
           style={{
-            backgroundColor: "#3b4664",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
             color: "white",
           }}
         >
-          <div>calc</div>
+          <div style={{ fontSize: "1.2rem", fontWeight: "700" }}>calc</div>
           <div
             style={{
               display: "flex",
@@ -39,7 +38,7 @@ function Body() {
               justifyContent: "space-between",
             }}
           >
-            <span>THEME</span>
+            <span style={{ fontSize: "0.6rem", fontWeight: "600" }}>THEME</span>
             <ToggleTheme />
           </div>
         </div>

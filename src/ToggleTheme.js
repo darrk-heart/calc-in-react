@@ -11,9 +11,39 @@ const ToggleTheme = () => {
   return (
     <div className="switch-container" onClick={handleToggle}>
       <div className="labels">
-        <span className={selectedOption === 0 ? "active" : ""}> 1</span>
-        <span className={selectedOption === 1 ? "active" : ""}> 2</span>
-        <span className={selectedOption === 2 ? "active" : ""}> 3</span>
+        <span
+          style={{
+            fontSize: "0.6rem",
+            paddingBottom: "3px",
+            fontWeight: "600",
+          }}
+          className={selectedOption === 0 ? "active" : ""}
+        >
+          {" "}
+          1
+        </span>
+        <span
+          style={{
+            fontSize: "0.6rem",
+            paddingBottom: "3px",
+            fontWeight: "600",
+          }}
+          className={selectedOption === 1 ? "active" : ""}
+        >
+          {" "}
+          2
+        </span>
+        <span
+          style={{
+            fontSize: "0.6rem",
+            paddingBottom: "3px",
+            fontWeight: "600",
+          }}
+          className={selectedOption === 2 ? "active" : ""}
+        >
+          {" "}
+          3
+        </span>
       </div>
       <div
         className={`slider ${
