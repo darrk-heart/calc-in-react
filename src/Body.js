@@ -18,7 +18,6 @@ function Body() {
           left: "50%",
           transform: "translate(-50%, -50%)",
           position: "absolute",
-          // backgroundColor: "blue",
         }}
       >
         <div
@@ -45,12 +44,45 @@ function Body() {
         <div
           style={{
             height: "17%",
-            margin: "25px 0 15px 0",
+            margin: "25px 0 20px 0",
             borderRadius: "8px",
             backgroundColor: "#181f32",
           }}
         ></div>
-        <div></div>
+        <div
+          style={{
+            backgroundColor: "#252d44",
+            height: "60%",
+            borderRadius: "8px",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              padding: "30px 30px",
+            }}
+          >
+            <div
+              style={{
+                width: "16%",
+                height: "45px",
+                backgroundColor: "#eae3db",
+                borderRadius: "4px",
+                fontSize: "1.3rem",
+                fontWeight: "800",
+                paddingTop: "10px",
+              }}
+            >
+              7
+            </div>
+            <div>8</div>
+            <div>9</div>
+            <div>DEL</div>
+          </div>
+        </div>
       </div>
     </div>
   );
