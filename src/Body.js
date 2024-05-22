@@ -42,7 +42,14 @@ function Body() {
             <ToggleTheme />
           </div>
         </div>
-        <div></div>
+        <div
+          style={{
+            height: "17%",
+            margin: "25px 0 15px 0",
+            borderRadius: "8px",
+            backgroundColor: "#181f32",
+          }}
+        ></div>
         <div></div>
       </div>
     </div>
