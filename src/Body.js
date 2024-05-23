@@ -13,7 +13,7 @@ function Body() {
           </div>
         </div>
         <div className="frame-two">
-          <span>399,981</span>
+          <span className="result">399,981</span>
         </div>
         <div className="frame-three">
           <div className="frame-three-first">
