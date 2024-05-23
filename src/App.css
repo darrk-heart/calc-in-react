@@ -64,8 +64,8 @@
 }
 .body-frame {
   width: 33%;
-  height: 70%;
-  top: 50%;
+  height: 83%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -100,7 +100,7 @@
 
 .frame-three {
   background-color: #252d44;
-  height: 60%;
+  height: 75%;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -110,8 +110,46 @@
   justify-content: space-between;
   padding: 30px 30px;
 }
-
-
+.frame-three-second {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 30px 30px;
+}
+.frame-three-last {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 30px 30px;
+}
+.equal {
+  width: 45%;
+  height: 43px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-top: 10px;
+  border-bottom: 4px solid #922417;
+  color: white;
+  background-color: #d13f30;
+  cursor: pointer;
+}
+.equal:hover {
+  background-color: #f96c5b;
+}
+.reset {
+  width: 45%;
+  height: 43px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-top: 10px;
+  border-bottom: 4px solid #424f72;
+  color: white;
+  background-color: #647299;
+  cursor: pointer;
+}
+.reset:hover {
+  background-color: #a2b3e1;
+}
 .numbers {
   width: 17%;
   height: 43px;
@@ -121,8 +159,13 @@
   font-weight: 800;
   padding-top: 10px;
   border-bottom: 4px solid #b7a79a;
+  color: #313642;
+  cursor: pointer;
 }
-.delnreset {
+.numbers:hover {
+  background-color: white;
+}
+.del {
   width: 17%;
   height: 43px;
   background-color: #647299;
@@ -132,4 +175,8 @@
   padding-top: 10px;
   border-bottom: 4px solid #424f72;
   color: white;
+  cursor: pointer;
+}
+.del:hover {
+  background-color: #a2b3e1;
 }

@@ -18,7 +18,29 @@ function Body() {
             <div className="numbers">7</div>
             <div className="numbers">8</div>
             <div className="numbers">9</div>
-            <div className="delnreset">DEL</div>
+            <div className="del">DEL</div>
+          </div>
+          <div className="frame-three-second">
+            <div className="numbers">4</div>
+            <div className="numbers">5</div>
+            <div className="numbers">6</div>
+            <div className="numbers">+</div>
+          </div>
+          <div className="frame-three-second">
+            <div className="numbers">1</div>
+            <div className="numbers">2</div>
+            <div className="numbers">3</div>
+            <div className="numbers">-</div>
+          </div>
+          <div className="frame-three-second">
+            <div className="numbers">.</div>
+            <div className="numbers">0</div>
+            <div className="numbers">/</div>
+            <div className="numbers">x</div>
+          </div>
+          <div className="frame-three-last">
+            <div className="reset">RESET</div>
+            <div className="equal">=</div>
           </div>
         </div>
       </div>
