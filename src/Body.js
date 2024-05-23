@@ -12,7 +12,9 @@ function Body() {
             <ToggleTheme />
           </div>
         </div>
-        <div className="frame-two"></div>
+        <div className="frame-two">
+          <span>399,981</span>
+        </div>
         <div className="frame-three">
           <div className="frame-three-first">
             <div className="numbers">7</div>
