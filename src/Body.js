@@ -65,22 +65,10 @@ function Body() {
               padding: "30px 30px",
             }}
           >
-            <div
-              style={{
-                width: "16%",
-                height: "45px",
-                backgroundColor: "#eae3db",
-                borderRadius: "4px",
-                fontSize: "1.3rem",
-                fontWeight: "800",
-                paddingTop: "10px",
-              }}
-            >
-              7
-            </div>
-            <div>8</div>
-            <div>9</div>
-            <div>DEL</div>
+            <div className="numbers">7</div>
+            <div className="numbers">8</div>
+            <div className="numbers">9</div>
+            <div className="delnreset">DEL</div>
           </div>
         </div>
       </div>

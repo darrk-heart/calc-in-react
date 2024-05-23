@@ -56,3 +56,24 @@
 .labels .active {
   font-weight: bold;
 }
+.numbers {
+  width: 17%;
+  height: 43px;
+  background-color: #eae3db;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-top: 10px;
+  border-bottom: 4px solid #b7a79a;
+}
+.delnreset {
+  width: 17%;
+  height: 43px;
+  background-color: #647299;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-top: 10px;
+  border-bottom: 4px solid #424f72;
+  color: white;
+}
