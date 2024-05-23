@@ -1,17 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import Body from "./Body";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState("true");
-
-  const toggleMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
   return (
     <div className="App">
-      <Body isDarkMode={isDarkMode} toggleMode={toggleMode}></Body>
+      <Body />
     </div>
   );
 }
