@@ -56,6 +56,62 @@
 .labels .active {
   font-weight: bold;
 }
+
+.main-body {
+  background-color: #3b4664;
+  width: 100vw;
+  height: 100vh;
+}
+.body-frame {
+  width: 33%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.frame-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.frame-one-content {
+  display: flex;
+  align-items: center;
+  width: 28%;
+  justify-content: space-between;
+}
+.calc {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.theme {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.frame-two {
+  height: 17%;
+  margin: 25px 0 20px 0;
+  border-radius: 8px;
+  background-color: #181f32;
+}
+
+.frame-three {
+  background-color: #252d44;
+  height: 60%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.frame-three-first {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+}
+
+
 .numbers {
   width: 17%;
   height: 43px;
