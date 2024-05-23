@@ -14,7 +14,7 @@ function Body() {
         </div>
         <div className="frame-two"></div>
         <div className="frame-three">
-          <div>
+          <div className="frame-three-first">
             <div className="numbers">7</div>
             <div className="numbers">8</div>
             <div className="numbers">9</div>
