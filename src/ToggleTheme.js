@@ -4,12 +4,21 @@ import "./App.css";
 const ToggleTheme = () => {
   const [selectedOption, setSelectedOption] = useState(0);
 
-  const handleToggle = () => {
-    setSelectedOption((prevOption) => (prevOption + 1) % 3);
+  const handleSelect = (option) => {
+    setSelectedOption(option);
+  };
+
+  const handleClick = (event) => {
+    const containerWidth = event.currentTarget.offsetWidth;
+    const clickX =
+      event.clientX - event.currentTarget.getBoundingClientRect().left;
+    const optionWidth = containerWidth / 3;
+    const selected = Math.floor(clickX / optionWidth);
+    setSelectedOption(selected);
   };
 
   return (
-    <div className="switch-container" onClick={handleToggle}>
+    <div className="switch-container" onClick={handleClick}>
       <div className="labels">
         <span
           style={{
@@ -19,7 +28,6 @@ const ToggleTheme = () => {
           }}
           className={selectedOption === 0 ? "active" : ""}
         >
-          {" "}
           1
         </span>
         <span
@@ -30,7 +38,6 @@ const ToggleTheme = () => {
           }}
           className={selectedOption === 1 ? "active" : ""}
         >
-          {" "}
           2
         </span>
         <span
@@ -41,7 +48,6 @@ const ToggleTheme = () => {
           }}
           className={selectedOption === 2 ? "active" : ""}
         >
-          {" "}
           3
         </span>
       </div>
