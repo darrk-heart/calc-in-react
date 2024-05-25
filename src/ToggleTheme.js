@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { useTheme } from './ThemeContext';
-import './App.css';
+import React, { useState } from "react";
+import { useTheme } from "./ThemeContext";
+import "./App.css";
 
 const ToggleTheme = () => {
   const [selectedOption, setSelectedOption] = useState(0);
-  const { changeTheme } = useTheme();
+  const { theme, changeTheme } = useTheme();
 
   const handleSelect = (option) => {
     setSelectedOption(option);
@@ -25,31 +25,31 @@ const ToggleTheme = () => {
       <div className="labels">
         <span
           style={{
-            fontSize: '0.6rem',
-            paddingBottom: '3px',
-            fontWeight: '600',
+            fontSize: "0.6rem",
+            paddingBottom: "3px",
+            fontWeight: "600",
           }}
-          className={selectedOption === 0 ? 'active' : ''}
+          className={selectedOption === 0 ? "active" : ""}
         >
           1
         </span>
         <span
           style={{
-            fontSize: '0.6rem',
-            paddingBottom: '3px',
-            fontWeight: '600',
+            fontSize: "0.6rem",
+            paddingBottom: "3px",
+            fontWeight: "600",
           }}
-          className={selectedOption === 1 ? 'active' : ''}
+          className={selectedOption === 1 ? "active" : ""}
         >
           2
         </span>
         <span
           style={{
-            fontSize: '0.6rem',
-            paddingBottom: '3px',
-            fontWeight: '600',
+            fontSize: "0.6rem",
+            paddingBottom: "3px",
+            fontWeight: "600",
           }}
-          className={selectedOption === 2 ? 'active' : ''}
+          className={selectedOption === 2 ? "active" : ""}
         >
           3
         </span>
@@ -57,13 +57,19 @@ const ToggleTheme = () => {
       <div
         className={`slider ${
           selectedOption === 0
-            ? 'option-0'
+            ? "option-0"
             : selectedOption === 1
-            ? 'option-1'
-            : 'option-2'
+            ? "option-1"
+            : "option-2"
         }`}
+        style={{ backgroundColor: theme.butttonBg }}
       >
-        <div className="slider-button"></div>
+        <div
+          className="slider-button"
+          style={{
+            backgroundColor: theme.buttonColor,
+          }}
+        ></div>
       </div>
     </div>
   );

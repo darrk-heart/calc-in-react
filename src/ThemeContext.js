@@ -4,6 +4,8 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState({
+    buttonColor: "#d13f30",
+    buttonBg: "#181f32",
     backgroundColor: "#3b4664",
     frameTwoColor: "#181f32",
     frameTwoText: "white",
@@ -18,6 +20,8 @@ export const ThemeProvider = ({ children }) => {
     switch (selectedOption) {
       case 0:
         setTheme({
+          buttonColor: "#d13f30",
+          buttonBg: "#181f32",
           backgroundColor: "#3b4664",
           frameTwoColor: "#181f32",
           frameTwoText: "white",
@@ -30,6 +34,8 @@ export const ThemeProvider = ({ children }) => {
         break;
       case 1:
         setTheme({
+          buttonColor: "#c85401",
+          buttonBg: "white",
           backgroundColor: "#e6e6e6",
           textColor: "black",
           frameTwoColor: "white",
@@ -49,6 +55,8 @@ export const ThemeProvider = ({ children }) => {
         break;
       default:
         setTheme({
+          buttonColor: "#d13f30",
+          buttonBg: "#181f32",
           backgroundColor: "#3b4664",
           frameTwoColor: "#181f32",
           frameTwoText: "white",

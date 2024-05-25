@@ -13,7 +13,7 @@
   position: relative;
   width: 100%;
   height: 17px;
-  background-color: #181f32;
+  background-color: #252c46;
   border-radius: 34px;
   transition: 0.4s;
 }
@@ -29,17 +29,14 @@
 
 .option-0 .slider-button {
   left: 4px;
-  background-color: #d13f30;
 }
 
 .option-1 .slider-button {
-  left: 25px; /* (180 - 34) / 2 = 76 */
-  background-color: #d13f30;
+  left: 25px;
 }
 
 .option-2 .slider-button {
-  left: 42px; /* 180 - 34 = 148 */
-  background-color: #d13f30;
+  left: 42px;
 }
 
 .labels {
