@@ -38,19 +38,31 @@ const BodyContent = () => {
           <div className="frame-three-first">
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               7
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               8
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               9
             </div>
@@ -67,25 +79,41 @@ const BodyContent = () => {
           <div className="frame-three-second">
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               4
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               5
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               6
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               +
             </div>
@@ -93,25 +121,41 @@ const BodyContent = () => {
           <div className="frame-three-second">
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               1
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               2
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               3
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               -
             </div>
@@ -119,25 +163,41 @@ const BodyContent = () => {
           <div className="frame-three-second">
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               .
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               0
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               /
             </div>
             <div
               className="numbers"
-              style={{ backgroundColor: theme.numbersBg }}
+              style={{
+                backgroundColor: theme.numbersBg,
+                color: theme.numbersText,
+                borderBottom: theme.numbersBorder,
+              }}
             >
               x
             </div>
@@ -152,7 +212,14 @@ const BodyContent = () => {
             >
               RESET
             </div>
-            <div className="equal" style={{ backgroundColor: theme.equalBg }}>
+            <div
+              className="equal"
+              style={{
+                backgroundColor: theme.equalBg,
+                color: theme.equalText,
+                borderBottom: theme.equalBorder,
+              }}
+            >
               =
             </div>
           </div>

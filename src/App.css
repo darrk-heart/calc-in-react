@@ -129,8 +129,6 @@
   font-size: 1.5rem;
   font-weight: 800;
   padding-top: 10px;
-  border-bottom: 4px solid #922417;
-  color: white;
   cursor: pointer;
 }
 .equal:hover {
@@ -156,8 +154,6 @@
   font-size: 1.5rem;
   font-weight: 800;
   padding-top: 10px;
-  border-bottom: 4px solid #b7a79a;
-  color: #313642;
   cursor: pointer;
 }
 .numbers:hover {
