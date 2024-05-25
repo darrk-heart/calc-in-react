@@ -6,6 +6,12 @@ export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState({
     backgroundColor: "#3b4664",
     frameTwoColor: "#181f32",
+    frameTwoText: "white",
+    frameThreeColor: "#252d44",
+    numbersBg: "#eae3db",
+    delnresetBg: "#647299",
+    delnresetBorder: "4px solid #424f72",
+    equalBg: "#d13f30",
   });
 
   const changeTheme = (selectedOption) => {
@@ -14,26 +20,43 @@ export const ThemeProvider = ({ children }) => {
         setTheme({
           backgroundColor: "#3b4664",
           frameTwoColor: "#181f32",
+          frameTwoText: "white",
+          frameThreeColor: "#252d44",
+          numbersBg: "#eae3db",
+          delnresetBg: "#647299",
+          delnresetBorder: "4px solid #424f72",
+          equalBg: "#d13f30",
         });
         break;
       case 1:
         setTheme({
-          backgroundColor: "white",
+          backgroundColor: "#e6e6e6",
           textColor: "black",
           frameTwoColor: "white",
+          frameTwoText: "black",
+          frameThreeColor: "#d3cdcd",
+          numbersBg: "#e5e4e0",
+          delnresetBg: "#388187",
+          delnresetBorder: "4px solid #1f5b66",
+          equalBg: "#c85401",
         });
         break;
       case 2:
         setTheme({
           backgroundColor: "green",
           textColor: "yellow",
-          boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.4)",
         });
         break;
       default:
         setTheme({
           backgroundColor: "#3b4664",
           frameTwoColor: "#181f32",
+          frameTwoText: "white",
+          frameThreeColor: "#252d44",
+          numbersBg: "#eae3db",
+          delnresetBg: "#647299",
+          delnresetBorder: "4px solid #424f72",
+          equalBg: "#d13f30",
         });
     }
   };

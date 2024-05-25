@@ -100,13 +100,11 @@
   padding: 25px;
 }
 .result {
-  color: white;
   font-size: 2.8rem;
   font-weight: 700;
 }
 
 .frame-three {
-  background-color: #252d44;
   height: 75%;
   border-radius: 8px;
   display: flex;
@@ -136,7 +134,6 @@
   padding-top: 10px;
   border-bottom: 4px solid #922417;
   color: white;
-  background-color: #d13f30;
   cursor: pointer;
 }
 .equal:hover {
@@ -149,9 +146,7 @@
   font-size: 1.5rem;
   font-weight: 800;
   padding-top: 10px;
-  border-bottom: 4px solid #424f72;
   color: white;
-  background-color: #647299;
   cursor: pointer;
 }
 .reset:hover {
@@ -160,8 +155,7 @@
 .numbers {
   width: 17%;
   height: 43px;
-  background-color: #eae3db;
-  border-radius: 5px;
+  border-radius: 7px;
   font-size: 1.5rem;
   font-weight: 800;
   padding-top: 10px;
@@ -175,12 +169,10 @@
 .del {
   width: 17%;
   height: 43px;
-  background-color: #647299;
   border-radius: 5px;
   font-size: 1.5rem;
   font-weight: 800;
   padding-top: 10px;
-  border-bottom: 4px solid #424f72;
   color: white;
   cursor: pointer;
 }

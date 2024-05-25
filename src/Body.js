@@ -24,38 +24,137 @@ const BodyContent = () => {
         </div>
         <div
           className="frame-two"
-          style={{ backgroundColor: theme.frameTwoColor }}
+          style={{
+            backgroundColor: theme.frameTwoColor,
+            color: theme.frameTwoText,
+          }}
         >
           <span className="result">399,981</span>
         </div>
-        <div className="frame-three">
+        <div
+          className="frame-three"
+          style={{ backgroundColor: theme.frameThreeColor }}
+        >
           <div className="frame-three-first">
-            <div className="numbers">7</div>
-            <div className="numbers">8</div>
-            <div className="numbers">9</div>
-            <div className="del">DEL</div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              7
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              8
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              9
+            </div>
+            <div
+              className="del"
+              style={{
+                backgroundColor: theme.delnresetBg,
+                borderBottom: theme.delnresetBorder,
+              }}
+            >
+              DEL
+            </div>
           </div>
           <div className="frame-three-second">
-            <div className="numbers">4</div>
-            <div className="numbers">5</div>
-            <div className="numbers">6</div>
-            <div className="numbers">+</div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              4
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              5
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              6
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              +
+            </div>
           </div>
           <div className="frame-three-second">
-            <div className="numbers">1</div>
-            <div className="numbers">2</div>
-            <div className="numbers">3</div>
-            <div className="numbers">-</div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              1
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              2
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              3
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              -
+            </div>
           </div>
           <div className="frame-three-second">
-            <div className="numbers">.</div>
-            <div className="numbers">0</div>
-            <div className="numbers">/</div>
-            <div className="numbers">x</div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              .
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              0
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              /
+            </div>
+            <div
+              className="numbers"
+              style={{ backgroundColor: theme.numbersBg }}
+            >
+              x
+            </div>
           </div>
           <div className="frame-three-last">
-            <div className="reset">RESET</div>
-            <div className="equal">=</div>
+            <div
+              className="reset"
+              style={{
+                backgroundColor: theme.delnresetBg,
+                borderBottom: theme.delnresetBorder,
+              }}
+            >
+              RESET
+            </div>
+            <div className="equal" style={{ backgroundColor: theme.equalBg }}>
+              =
+            </div>
           </div>
         </div>
       </div>
