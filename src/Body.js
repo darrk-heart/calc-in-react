@@ -1,18 +1,31 @@
 import React from "react";
 import ToggleTheme from "./ToggleTheme";
+import { ThemeProvider, useTheme } from "./ThemeContext";
+import "./App.css";
 
-function Body() {
+const BodyContent = () => {
+  const { theme } = useTheme();
+
   return (
-    <div className="main-body">
+    <div
+      className="main-body"
+      style={{
+        backgroundColor: theme.backgroundColor,
+        transition: "all 0.5s",
+      }}
+    >
       <div className="body-frame">
-        <div className="frame-one">
+        <div className="frame-one" style={{ color: theme.textColor }}>
           <div className="calc">calc</div>
           <div className="frame-one-content">
             <span className="theme">THEME</span>
             <ToggleTheme />
           </div>
         </div>
-        <div className="frame-two">
+        <div
+          className="frame-two"
+          style={{ backgroundColor: theme.frameTwoColor }}
+        >
           <span className="result">399,981</span>
         </div>
         <div className="frame-three">
@@ -48,6 +61,12 @@ function Body() {
       </div>
     </div>
   );
-}
+};
+
+const Body = () => (
+  <ThemeProvider>
+    <BodyContent />
+  </ThemeProvider>
+);
 
 export default Body;
