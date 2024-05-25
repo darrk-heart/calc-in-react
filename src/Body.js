@@ -3,16 +3,30 @@ import ToggleTheme from "./ToggleTheme";
 import { ThemeProvider, useTheme } from "./ThemeContext";
 import "./App.css";
 
+const NumberButton = ({ number, style }) => (
+  <div className="numbers" style={style}>
+    {number}
+  </div>
+);
+
 const BodyContent = () => {
   const { theme } = useTheme();
+
+  const numberStyle = {
+    backgroundColor: theme.numbersBg,
+    color: theme.numbersText,
+    borderBottom: theme.numbersBorder,
+  };
+
+  const specialButtonStyle = {
+    backgroundColor: theme.delnresetBg,
+    borderBottom: theme.delnresetBorder,
+  };
 
   return (
     <div
       className="main-body"
-      style={{
-        backgroundColor: theme.backgroundColor,
-        transition: "all 0.5s",
-      }}
+      style={{ backgroundColor: theme.backgroundColor }}
     >
       <div className="body-frame">
         <div className="frame-one" style={{ color: theme.textColor }}>
@@ -36,180 +50,30 @@ const BodyContent = () => {
           style={{ backgroundColor: theme.frameThreeColor }}
         >
           <div className="frame-three-first">
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              7
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              8
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              9
-            </div>
-            <div
-              className="del"
-              style={{
-                backgroundColor: theme.delnresetBg,
-                borderBottom: theme.delnresetBorder,
-              }}
-            >
+            {["7", "8", "9"].map((num) => (
+              <NumberButton key={num} number={num} style={numberStyle} />
+            ))}
+            <div className="del" style={specialButtonStyle}>
               DEL
             </div>
           </div>
           <div className="frame-three-second">
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              4
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              5
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              6
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              +
-            </div>
+            {["4", "5", "6", "+"].map((num) => (
+              <NumberButton key={num} number={num} style={numberStyle} />
+            ))}
           </div>
           <div className="frame-three-second">
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              1
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              2
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              3
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              -
-            </div>
+            {["1", "2", "3", "-"].map((num) => (
+              <NumberButton key={num} number={num} style={numberStyle} />
+            ))}
           </div>
           <div className="frame-three-second">
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              .
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              0
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              /
-            </div>
-            <div
-              className="numbers"
-              style={{
-                backgroundColor: theme.numbersBg,
-                color: theme.numbersText,
-                borderBottom: theme.numbersBorder,
-              }}
-            >
-              x
-            </div>
+            {[".", "0", "/", "x"].map((num) => (
+              <NumberButton key={num} number={num} style={numberStyle} />
+            ))}
           </div>
           <div className="frame-three-last">
-            <div
-              className="reset"
-              style={{
-                backgroundColor: theme.delnresetBg,
-                borderBottom: theme.delnresetBorder,
-              }}
-            >
+            <div className="reset" style={specialButtonStyle}>
               RESET
             </div>
             <div
