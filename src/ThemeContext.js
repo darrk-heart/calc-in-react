@@ -18,7 +18,7 @@ const themes = {
     equalBg: "#d13f30",
     equalText: "white",
     equalBorder: "4px solid #922417",
-    textColor: "white", // Added textColor for consistency
+    textColor: "white",
   },
   theme1: {
     buttonColor: "#c85401",
