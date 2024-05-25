@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import ToggleTheme from "./ToggleTheme";
 import { ThemeProvider, useTheme } from "./ThemeContext";
 import "./App.css";
 
-const NumberButton = ({ number, style }) => (
-  <div className="numbers" style={style}>
+const NumberButton = ({ number, style, onClick }) => (
+  <div className="numbers" style={style} onClick={() => onClick(number)}>
     {number}
   </div>
 );
 
 const BodyContent = () => {
   const { theme } = useTheme();
+  const [displayedNumber, setDisplayedNumber] = useState("");
 
   const numberStyle = {
     backgroundColor: theme.numbersBg,
@@ -21,6 +22,13 @@ const BodyContent = () => {
   const specialButtonStyle = {
     backgroundColor: theme.delnresetBg,
     borderBottom: theme.delnresetBorder,
+  };
+
+  const handleNumberClick = (number) => {
+    setDisplayedNumber((prevNumber) => prevNumber + number);
+  };
+  const handleDelClick = () => {
+    setDisplayedNumber((prevNumber) => prevNumber.slice(0, -1));
   };
 
   return (
@@ -43,7 +51,7 @@ const BodyContent = () => {
             color: theme.frameTwoText,
           }}
         >
-          <span className="result">399,981</span>
+          <span className="result">{displayedNumber}</span>
         </div>
         <div
           className="frame-three"
@@ -51,25 +59,49 @@ const BodyContent = () => {
         >
           <div className="frame-three-first">
             {["7", "8", "9"].map((num) => (
-              <NumberButton key={num} number={num} style={numberStyle} />
+              <NumberButton
+                key={num}
+                number={num}
+                style={numberStyle}
+                onClick={handleNumberClick}
+              />
             ))}
-            <div className="del" style={specialButtonStyle}>
+            <div
+              className="del"
+              style={specialButtonStyle}
+              onClick={handleDelClick}
+            >
               DEL
             </div>
           </div>
           <div className="frame-three-second">
             {["4", "5", "6", "+"].map((num) => (
-              <NumberButton key={num} number={num} style={numberStyle} />
+              <NumberButton
+                key={num}
+                number={num}
+                style={numberStyle}
+                onClick={handleNumberClick}
+              />
             ))}
           </div>
           <div className="frame-three-second">
             {["1", "2", "3", "-"].map((num) => (
-              <NumberButton key={num} number={num} style={numberStyle} />
+              <NumberButton
+                key={num}
+                number={num}
+                style={numberStyle}
+                onClick={handleNumberClick}
+              />
             ))}
           </div>
           <div className="frame-three-second">
             {[".", "0", "/", "x"].map((num) => (
-              <NumberButton key={num} number={num} style={numberStyle} />
+              <NumberButton
+                key={num}
+                number={num}
+                style={numberStyle}
+                onClick={handleNumberClick}
+              />
             ))}
           </div>
           <div className="frame-three-last">
