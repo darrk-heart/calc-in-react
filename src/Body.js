@@ -30,6 +30,9 @@ const BodyContent = () => {
   const handleDelClick = () => {
     setDisplayedNumber((prevNumber) => prevNumber.slice(0, -1));
   };
+  const handleResetClick = () => {
+    setDisplayedNumber("");
+  };
 
   return (
     <div
@@ -105,7 +108,11 @@ const BodyContent = () => {
             ))}
           </div>
           <div className="frame-three-last">
-            <div className="reset" style={specialButtonStyle}>
+            <div
+              className="reset"
+              style={specialButtonStyle}
+              onClick={handleResetClick}
+            >
               RESET
             </div>
             <div
