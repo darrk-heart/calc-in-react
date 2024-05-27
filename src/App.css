@@ -94,6 +94,9 @@
   display: flex;
   justify-content: flex-end;
   padding: 25px;
+  padding-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .result {
   font-size: 2.8rem;
